@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: rgba(7, 22, 41, 1);
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -26,6 +26,7 @@ header .container {
   padding: 20px 40px;
   display: flex;
   align-items: center;
+  padding: 30px 60px;
 }
 
 .nav-links {
@@ -42,7 +43,6 @@ header .container {
 
 header img {
   width: auto;
-  height: 50px;
 }
 
 header a {
@@ -93,13 +93,16 @@ header a {
 }
 
 .titre button {
-  padding: 10px 20px;
-  font-weight: bold;
-  background-color: rgb(212, 75, 253);
-  border-radius: 48px;
-  cursor: pointer;
+  background-color: #C271FF;
   color: white;
-  border-color: rgb(212, 75, 253);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .learn {
@@ -155,7 +158,7 @@ header a {
 
 .quote {
   padding: 60px 20px;
-  background-color: #cc44db;
+  background-color: rgba(194, 113, 255, 1);
   font-family: 'Inter', sans-serif;
   text-align: center;
 }
@@ -201,6 +204,7 @@ header a {
   text-align: center;
   padding: 80px;
   font-family: 'Inter', sans-serif;
+  background-color: white;
 }
 
 .popular-tutorials h1 {
@@ -295,61 +299,79 @@ header a {
 /* membership */
 
 .member {
-  background-color: #1d2a37;
-  height: 400px;
+  background-color: #071629;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .member h1 {
-  text-align: center;
-  color: #cc44db;
-  padding-top: 40px;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 60px;
 }
 
-.member span{
-  color: white;
+.member h1 span {
+  color: #C271FF;
+  font-weight: 700;
 }
 
 .memb-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: start;
 }
 
 .memb-cont {
-  height: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
-}
-
-.memb-cont h2 {
-  margin-top: 20px;
-}
-
-.memb-grid button{
-  position: absolute;
-  justify-content: center;
-  margin-top: 260px;
-  font-weight: bold;
-  background-color: rgb(212, 75, 253);
-  border-radius: 48px;
-  cursor: pointer;
-  color: white;
-  border-color: rgb(212, 75, 253);
-  padding: 10px 20px;
 }
 
 .memb-cont img {
-  width: 100%;
+  width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.memb-cont h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.memb-cont p {
+  font-size: 14px;
+  color: #D8D8D8;
+  line-height: 1.6;
+  max-width: 200px;
+}
+
+/* Bouton violet */
+.memb-grid button {
+  grid-column: 1 / -1;
+  margin: 60px auto 0;
+  background-color: #C271FF;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.memb-cont img {
   max-height: 70px;
   max-width: 70px;
   object-fit: cover;
-  border-radius: 36px;
   display: block;
   align-items: center;
 }
@@ -394,7 +416,7 @@ header a {
 /* footer */
 
 footer {
-  background-color: #0a1a2c;
+  background-color: rgba(7, 22, 41, 1);
   padding: 40px 60px;
   color: white;
   font-family: 'Inter', sans-serif;
@@ -417,8 +439,7 @@ footer {
 }
 
 .logo {
-  height: 40px;
-  border-radius: 50%;
+  height: 20px;
 }
 
 .right a img {
