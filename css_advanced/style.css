@@ -1,3 +1,49 @@
+/* sans pro-bold */
+@font-face {
+  font-family: "bold";
+  src: url("fonts/SourceSansPro-Bold.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* sans pro regular */
+@font-face {
+  font-family: "regular";
+  src: url("fonts/SourceSansPro-Regular.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+/* semi-bold */
+@font-face {
+  font-family: "semi-bold";
+  src: url("fonts/SourceSansPro-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* sans pro black */
+@font-face {
+  font-family: "black";
+  src: url("fonts/SourceSansPro-Black.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* light */
+@font-face {
+  font-family: "light";
+  src: url("fonts/SourceSansPro-Light.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* pro-italic */
+@font-face {
+  font-family: "pro-it";
+  src: url("fonts/SourceSansPro-It.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +52,6 @@
 
 body {
     background-color: rgba(7, 22, 41, 1);
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* header */
@@ -50,6 +95,7 @@ header a {
   text-decoration: none;
   margin-left: 20px;
   font-weight: 600;
+  font-family: "bold";
 }
 
 /* banner */
@@ -78,6 +124,7 @@ header a {
 .titre h1 {
   font-size: 64px;
   margin-bottom: 10px;
+  font-family: "bold";
 }
 
 .slogans {
@@ -90,6 +137,7 @@ header a {
 .slogans span {
   font-size: 18px;
   font-weight: 500;
+  font-family: "bold";
 }
 
 .titre button {
@@ -103,6 +151,7 @@ header a {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: "semi-bold";
 }
 
 .learn {
@@ -117,10 +166,12 @@ header a {
   font-size: 28px;
   margin-bottom: 40px;
   margin-top: 40px;
+  font-family: "light";
 }
 
 .learn span {
   color: #cc44db;
+  font-family: "bold";
 }
 
 .photos {
@@ -147,11 +198,13 @@ header a {
 .photo-card h3 {
   margin-top: 15px;
   font-size: 18px;
+  font-family: "black";
 }
 
 .photo-card p {
   font-size: 14px;
   opacity: 0.8;
+  font-family: "pro-it";
 }
 
 /* quote */
@@ -159,7 +212,7 @@ header a {
 .quote {
   padding: 60px 20px;
   background-color: rgba(194, 113, 255, 1);
-  font-family: 'Inter', sans-serif;
+  font-family: "regular";
   text-align: center;
 }
 
@@ -196,6 +249,7 @@ header a {
 .person-name {
   color: white;
   padding-top: 20px;
+  font-family: "bold";
 }
 
 /* vidéos */
@@ -215,6 +269,7 @@ header a {
 .popular-tutorials h1 span {
   color: purple;
   font-weight: bold;
+  font-family: "bold";
 }
 
 .video-grid {
@@ -259,12 +314,14 @@ header a {
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 6px;
+  font-family: "bold";
 }
 
 .video-card p {
   font-size: 14px;
   color: #666;
   margin-bottom: 10px;
+  font-family: "regular";
 }
 
 .video-info {
@@ -285,10 +342,15 @@ header a {
   flex-grow: 1;
   margin-left: 8px;
   color: purple;
+  font-family: "light";
 }
 
 .video-info .duration {
   color: #999;
+}
+
+.span .author {
+  font-family: "light";
 }
 
 .rating img {
@@ -310,11 +372,14 @@ header a {
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 60px;
+  font-family: "bold";
 }
 
 .member h1 span {
   color: #C271FF;
   font-weight: 700;
+  font-family: "light";
+  font-size: 32px;
 }
 
 .memb-grid {
@@ -339,10 +404,11 @@ header a {
 }
 
 .memb-cont h2 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
   text-transform: capitalize;
+  font-family: "semi-bold";
 }
 
 .memb-cont p {
@@ -350,6 +416,7 @@ header a {
   color: #D8D8D8;
   line-height: 1.6;
   max-width: 200px;
+  font-family: "reguar";
 }
 
 /* Bouton violet */
@@ -366,6 +433,7 @@ header a {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: "semi-bold";
 }
 
 .memb-cont img {
@@ -386,8 +454,9 @@ header a {
 
 .faq h1 {
   text-align: center;
-  font-size: 64px;
+  font-size: 60px;
   margin-bottom: 60px;
+  font-family: "light";
 }
 
 .faq-row {
@@ -403,14 +472,17 @@ header a {
 }
 
 .faq-item h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   margin-bottom: 20px;
+  font-family: "bold";
 }
 
 .faq-item p {
   color: #666;
   line-height: 1.6;
+  font-size: 14px;
+  font-family: "regular";
 }
 
 /* footer */
@@ -419,7 +491,7 @@ footer {
   background-color: rgba(7, 22, 41, 1);
   padding: 40px 60px;
   color: white;
-  font-family: 'Inter', sans-serif;
+  font-family: "regular";
   font-weight: 600;
   position: relative;
   text-align: center;
